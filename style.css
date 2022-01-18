@@ -1,0 +1,483 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root
+{
+    --green: #285722;
+}
+
+/* setup */
+
+h1, h2, h3
+{
+    font-family: 'Epilogue', sans-serif;
+    margin: 0.5rem 0;
+}
+
+img
+{
+    width: 100%;
+    display: block;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+ul li
+{
+    list-style-type: none;
+}
+
+body
+{
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+button
+{
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+}
+
+.o-nas-text
+{
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+
+.container
+{
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.py-5
+{
+    padding: 5rem 0;
+}
+
+/* header */
+
+.header
+{
+    height: 100vh;
+    background:
+    url(stronaglowna/img1.jpg) center/ cover no-repeat fixed;
+}
+
+.logo-img
+{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand
+{
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.navbar
+{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: white;
+    width: 100%;
+    box-shadow: white;
+}
+
+.brand-and-toggler
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 3.5rem;
+}
+
+.navbar-toggler
+{
+    color: black;
+    padding: 0.1rem 0.4rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.7rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler:hover
+{
+    background: black;
+    color: white;
+}
+
+.nav-item
+{
+    padding: 0.5rem 3.5rem;
+    transition: background 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-item:hover
+{
+    background: var(--green);
+    color: white;
+}
+
+.nav-link
+{
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.nav-link:hover
+{
+    color: white !important;
+}
+
+
+
+.navbar-collapse
+{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.s ease;
+}
+
+/* showNav class */
+
+.showNav
+{
+    height: 219px;
+    padding-top: 0.7rem;
+}
+
+.header-banner
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-line
+{
+    width: 150px;
+    height: 4px;
+    background: black;
+    margin: 0 auto;
+}
+
+.banner-title span
+{
+    display: block;
+    text-align: center;
+}
+
+.banner-title span:first-of-type
+{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-family: 'Epilogue', sans-serif;
+    letter-spacing: 4px;
+    margin: 1.5rem;
+}
+
+.banner-title span:last-of-type
+{
+   font-size: 3.2rem;
+   text-transform: capitalize; 
+}
+
+.header-banner-content
+{
+    background: rgba(255, 255, 255, 0.300);
+    padding: 3rem 0;
+    transition: background 0.5rem ease-in-out;
+}
+
+/* title */
+
+.title
+{
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.title-text
+{
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    font-family: 'Epilogue', sans-serif;
+    letter-spacing: 8px;
+}
+
+/* O nas */
+
+.o-nas-wrapper-2 > div
+{
+    margin: 3rem;
+}
+
+/* kolekcja */
+
+.kolekcja
+{
+    background: white;
+}
+
+.kolekcja-wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kolekcja-btns
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem 0;
+}
+
+.btn-item
+{
+    padding: 0.6rem 1.2rem;
+    margin: 0.5rem;
+    border: none;
+    background: transparent;
+    color: black;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+}
+
+.btn-active
+{
+    background: var(--green);
+    color: white;
+}
+
+.btn-item:hover
+{
+    background: var(--green);
+    color: white;
+}
+
+.kolekcja-imgs
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.img-item
+{
+    margin: 1rem;
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.6s ease opacity, 0.6s ease transform;
+}
+
+/* Ogrody */
+
+.ogrody-wrapper
+{
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ogrody-item
+{
+    margin: 1.5rem 0;
+    transition: all 0.5s ease;
+}
+
+
+.title-subtext
+{
+    border-left: 3px solid black;
+    padding-left: 0.5rem;
+    display: inline-block;
+    text-align: left;
+}
+
+ /* Kontakt */
+
+ .kontakt-form
+ {
+     margin: 1rem;
+ }
+
+ .form-control, textarea
+ {
+     width: 100%;
+     display: block;
+     font-family: inherit;
+     font-size: 1rem;
+     font-weight: 300;
+     padding: 0.9rem 0.6rem;
+     margin: 0.8rem 0;
+     border: 1px solid;
+ }
+
+.kontakt-form textarea
+{
+    height: 150px;
+}
+
+.submit-btn
+{
+    margin-top: 1.2rem;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    background: white;
+    border-width: 2.5px;
+    transition: all 0.5s ease;
+}
+
+.submit-btn:hover{
+    background: var(--green);
+    color: white;
+}
+
+
+
+/*footer*/
+
+.footer-bg
+{
+    height: 80px;
+    background: url(stronaglowna/img3.jpg);
+}
+
+.footer-text
+{
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px)
+{
+    .kolekcja-imgs
+    {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .ogrody-item
+    {
+        margin: 1.5rem 1rem;
+        flex: 0 0 calc(50% - 2rem);
+    }
+
+    .kontakt-form-wrapper
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1.8rem;
+    }
+
+    .kontakt-form textarea
+    {
+        height: 175px;
+
+    }
+
+    .submit-btn
+    {
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 992px)
+{
+    .container
+    {
+        width: 85vw;
+    }
+
+    .navbar
+    {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .navbar-collapse
+    {
+        flex: 1 0 auto;
+        padding-right: 7.5vw;
+        display: flex !important;
+        height: auto;
+        justify-content: flex-end;
+        transition: none;
+    }
+
+    .brand-and-toggler
+    {
+        padding-left: 7.5vw;
+        padding-right: 0;
+    }
+
+    .navbar-brand
+    {
+        font-size: 2.3rem;
+    }
+
+    .nav-item
+    {
+        padding: 0.75rem;
+    }
+
+    .navbar-toggler
+    {
+        display: none;
+    }
+
+    .navbar-nav
+    {
+        display: flex;
+    }
+
+    .o-nas-wrapper-2
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .o-nas-wrapper-2 > div
+    {
+        margin: 2rem;
+    }
+
+    .ogrody-item
+    {
+        flex: 0 0 calc(33.33% - 2rem);
+    }
+}
